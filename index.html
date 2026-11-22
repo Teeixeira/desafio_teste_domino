@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#10251f">
+    <title>Dominó</title><link rel="stylesheet" href="/styles.css"><script type="module" src="/browser.js"></script>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar"><a class="brand" href="/" aria-label="Dominó, início"><span class="brand-mark">D</span><span>JOGO<br><strong>DOMINÓ</strong></span></a><div class="top-meta"><span class="live-dot"></span> JOGO LOCAL <span class="meta-divider">·</span> 2 JOGADORES</div></header>
+      <section class="intro"><div class="eyebrow" id="phase-label">DUPLO-SEIS — PARTIDA LOCAL</div><h1 id="headline">Vamos jogar dominó.</h1><p id="subhead">Distribuição de sete peças para cada jogador. O jogador 1 começa.</p></section>
+      <section class="status-card" aria-live="polite"><div class="status-icon" id="status-icon">1</div><div class="status-copy"><strong id="status-title">Vez do Jogador 1</strong><span id="status-message">Escolha uma peça para começar.</span></div><span class="turn-pill" id="turn-pill">SUA VEZ</span></section>
+      <section class="game-layout">
+        <aside class="hand-panel panel"><div class="panel-heading"><div><span class="eyebrow" id="hand-kicker">SUA MÃO</span><h2 id="hand-title">Jogador 1</h2></div><span class="count-pill" id="hand-count">7 peças</span></div><div class="hand" id="hand"></div><p class="hand-note" id="hand-note">Selecione uma peça e a ponta onde deseja encaixá-la.</p></aside>
+        <section class="table-panel panel"><div class="panel-heading"><div><span class="eyebrow">MESA</span><h2>Cadeia de peças</h2></div><span class="count-pill" id="table-count">0 peças</span></div><div id="table" class="table" aria-live="polite"></div><div class="ends"><span id="left-end">ESQUERDA · —</span><span id="right-end">DIREITA · —</span></div></section>
+      </section>
+      <section class="actions"><div class="game-info"><span class="eyebrow">MONTE</span><strong id="stock-count">14 peças</strong><span class="separator">·</span><span id="opponent-count">Jogador 2: 7 peças</span></div><div class="action-buttons"><button id="pass-button" class="secondary-button" type="button">Passar</button><button id="draw-button" class="primary-button" type="button">Comprar peça <span>↓</span></button><button id="new-button" class="secondary-button" type="button">Nova partida</button></div></section>
+      <footer id="rules-note" class="rules-note">Sem jogada disponível? Compre do monte. Sem monte? Passe.</footer>
+    </main>
+    <div id="handoff" class="handoff hidden" role="dialog" aria-modal="true" aria-labelledby="handoff-title"><div class="handoff-card"><div class="handoff-symbol">◈</div><div class="eyebrow">PRÓXIMO TURNO</div><h2 id="handoff-title">Passe o dispositivo.</h2><p id="handoff-copy">Entregue o jogo ao outro jogador.</p><button id="handoff-button" class="primary-button" type="button">Estou pronto <span>→</span></button></div></div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
