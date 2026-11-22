@@ -2,6 +2,13 @@
 
 Projeto de jogo local para exatamente dois jogadores, com conjunto duplo-seis, distribuição de sete peças por jogador e compra sequencial do monte.
 
+## Participantes do grupo
+
+| Nome | RA |
+|---|---|
+| Leonardo Teixeira de Carvalho | 24159859-2 |
+| Matheus Eduardo Polizelli | 24129411-2 |
+
 ## Contrato das regras
 
 - O conjunto contém exatamente 28 combinações únicas de 0–0 a 6–6. A ordem fornecida é preservada para que distribuição e compra sejam reproduzíveis: as primeiras sete peças vão ao Jogador 1, as sete seguintes ao Jogador 2 e as 14 restantes formam o monte. A interface embaralha antes de criar a partida.
